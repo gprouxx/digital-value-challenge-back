@@ -1,0 +1,250 @@
+{
+  "categories": [
+    {
+      "id": 250162,
+      "name": "Products",
+      "depth": 0,
+      "ancestors": [
+        {
+          "id": 250162,
+          "name": "Products"
+        }
+      ]
+    },
+    {
+      "id": 250222,
+      "name": "Spread",
+      "depth": 1,
+      "ancestors": [
+        {
+          "id": 250162,
+          "name": "Products"
+        },
+        {
+          "id": 250222,
+          "name": "Spread"
+        }
+      ]
+    },
+    {
+      "id": 250224,
+      "name": "Breakfast",
+      "depth": 1,
+      "ancestors": [
+        {
+          "id": 250162,
+          "name": "Products"
+        },
+        {
+          "id": 250224,
+          "name": "Breakfast"
+        }
+      ]
+    },
+    {
+      "id": 274714,
+      "name": "Chocolate candy and praline",
+      "depth": 1,
+      "ancestors": [
+        {
+          "id": 250162,
+          "name": "Products"
+        },
+        {
+          "id": 274714,
+          "name": "Chocolate candy and praline"
+        }
+      ]
+    },
+    {
+      "id": 250301,
+      "name": "Honey",
+      "depth": 2,
+      "ancestors": [
+        {
+          "id": 250162,
+          "name": "Products"
+        },
+        {
+          "id": 250222,
+          "name": "Spread"
+        },
+        {
+          "id": 250301,
+          "name": "Honey"
+        }
+      ]
+    },
+    {
+      "id": 250303,
+      "name": "Breakfast bread",
+      "depth": 2,
+      "ancestors": [
+        {
+          "id": 250162,
+          "name": "Products"
+        },
+        {
+          "id": 250224,
+          "name": "Breakfast"
+        },
+        {
+          "id": 250303,
+          "name": "Breakfast bread"
+        }
+      ]
+    },
+    {
+      "id": 250328,
+      "name": "Butter",
+      "depth": 2,
+      "ancestors": [
+        {
+          "id": 250162,
+          "name": "Products"
+        },
+        {
+          "id": 250222,
+          "name": "Spread"
+        },
+        {
+          "id": 250328,
+          "name": "Butter"
+        }
+      ]
+    },
+    {
+      "id": 250332,
+      "name": "Breakfast cereal",
+      "depth": 2,
+      "ancestors": [
+        {
+          "id": 250162,
+          "name": "Products"
+        },
+        {
+          "id": 250224,
+          "name": "Breakfast"
+        },
+        {
+          "id": 250332,
+          "name": "Breakfast cereal"
+        }
+      ]
+    },
+    {
+      "id": 250333,
+      "name": "Other nuts spread",
+      "depth": 2,
+      "ancestors": [
+        {
+          "id": 250162,
+          "name": "Products"
+        },
+        {
+          "id": 250222,
+          "name": "Spread"
+        },
+        {
+          "id": 250333,
+          "name": "Other nuts spread"
+        }
+      ]
+    },
+    {
+      "id": 250378,
+      "name": "Jam",
+      "depth": 2,
+      "ancestors": [
+        {
+          "id": 250162,
+          "name": "Products"
+        },
+        {
+          "id": 250222,
+          "name": "Spread"
+        },
+        {
+          "id": 250378,
+          "name": "Jam"
+        }
+      ]
+    },
+    {
+      "id": 274734,
+      "name": "Praline",
+      "depth": 2,
+      "ancestors": [
+        {
+          "id": 250162,
+          "name": "Products"
+        },
+        {
+          "id": 274714,
+          "name": "Chocolate candy and praline"
+        },
+        {
+          "id": 274734,
+          "name": "Praline"
+        }
+      ]
+    },
+    {
+      "id": 274736,
+      "name": "Chocolate candy",
+      "depth": 2,
+      "ancestors": [
+        {
+          "id": 250162,
+          "name": "Products"
+        },
+        {
+          "id": 274714,
+          "name": "Chocolate candy and praline"
+        },
+        {
+          "id": 274736,
+          "name": "Chocolate candy"
+        }
+      ]
+    },
+    {
+      "id": 253921,
+      "name": "Yeast extract",
+      "depth": 2,
+      "ancestors": [
+        {
+          "id": 250162,
+          "name": "Products"
+        },
+        {
+          "id": 250222,
+          "name": "Spread"
+        },
+        {
+          "id": 253921,
+          "name": "Yeast extract"
+        }
+      ]
+    },
+    {
+      "id": 258361,
+      "name": "Hazelnut & cocoa spread",
+      "depth": 2,
+      "ancestors": [
+        {
+          "id": 250162,
+          "name": "Products"
+        },
+        {
+          "id": 250222,
+          "name": "Spread"
+        },
+        {
+          "id": 258361,
+          "name": "Hazelnut & cocoa spread"
+        }
+      ]
+    }
+  ]
+}

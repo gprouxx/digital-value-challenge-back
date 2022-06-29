@@ -1,0 +1,15 @@
+{
+  "name": "backend-challenge",
+  "version": "0.0.1",
+  "description": "Digital Value backend challenge",
+  "license": "MIT",
+  "dependencies": {
+    "sqlite": "^4.1.1",
+    "sqlite3": "^5.0.8",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/sqlite3": "^3.1.8"
+  }
+}
