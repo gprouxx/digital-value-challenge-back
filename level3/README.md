@@ -2,7 +2,7 @@
 
 We want now to expose the tree relationships directly in the api so the client can display the tree structure. The second step consists in exposing the path of the ancestors.
 
-# Level 2 - Expose the tree structure: the ancestors
+# Level 3 - Expose the tree structure: the ancestors
 
 Add the `ancestors` attribute to the existing GET endpoint that satisfies the following schema:
 
