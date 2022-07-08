@@ -18,8 +18,9 @@ Each level of the challenge is based on top of the previous one, so you can leve
 
 ## Rules
 
+- Use Node.js, you can use any frameworks or libs
+- TypeScript is preferred but not required
 - Use version control to deliver the test
-- You can use any libs
 
 ## What will be evaluated?
 
