@@ -1,6 +1,6 @@
 # Intro
 
-We want now to expose the tree relationships directly in the api so the client can display the tree structure. The second step consists in exposing the ancestors by listing all the ancestor categories of every category. For example, the path of the ancestors of `Jam` category is `Products,Spread`.
+We want now to expose the tree relationships directly in the api so the client can display the tree structure. The second step consists in exposing the ancestors by listing all the ancestor categories of every category. For example, the path of the ancestors of `Jam` category is `Products`, `Spread`.
 
 # Level 3 - Expose the tree structure: the ancestors
 
