@@ -10,8 +10,8 @@ Each level of the challenge is based on top of the previous one, so you can leve
 
 ## Guidelines
 
-- Clone the repo (do not fork it)
-- Implement each level in ascending order (last level is optional)
+- Clone the repo (do not fork it) and work on top of it
+- Implement each level in ascending order
 - Commit at the end of each level
 - Provide instructions to run each level of the challenge
 - Optionally, host the last level of the challenge
@@ -26,9 +26,9 @@ Each level of the challenge is based on top of the previous one, so you can leve
 
 - Clean, readable and well-organized code
 - Compliance with guidelines and rules
-- API routes design
 - Separation of concerns
 - Logic used to write/build sql queries
+- API routes design
 
 Let's get started! Go to [First level](level1)
 

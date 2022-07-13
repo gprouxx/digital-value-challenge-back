@@ -63,4 +63,4 @@ Add the `ancestors` attribute to the existing GET endpoint that satisfies the fo
 ]
 ```
 
-Then go to [next level](../level4) (optional)
+Then go to [next level](../level4)
