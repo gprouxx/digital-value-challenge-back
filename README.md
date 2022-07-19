@@ -26,7 +26,6 @@ Each level of the challenge is based on top of the previous one, so you can leve
 
 - Clean, readable and well-organized code
 - Compliance with guidelines and rules
-- Separation of concerns
 - Logic used to write/build sql queries
 - API routes design
 
