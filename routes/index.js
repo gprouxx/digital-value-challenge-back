@@ -11,6 +11,13 @@ const db = new sqlite3.Database("db.sqlite", err => {
 });
 
 const GET_ALL_CATEGORIES = "select * from categories c inner join categories_closure cc on c.id = cc.descendant_id";
+const GET_ALL_VOLUMES = "select c1.id, c1.name, round(avg(volume), 0) as volume " +
+    "from categories c1 " +
+    "inner join categories_closure cc on c1.id = cc.ancestor_id " +
+    "inner join categories c2 on c2.id = cc.descendant_id " +
+    "inner join volumes v on c2.id = v.category_id " +
+    "where date(v.date, '+24 months') > current_date " +
+    "group by c1.id, c1.name";
 
 /* Instructions:
  - run "npm start"
@@ -44,6 +51,31 @@ router.get('/web/v1/categories', function(req, res, next) {
                 result.children = JSON.parse(JSON.stringify(children))
                 results.push(result)
             }
+        }
+
+        res.send(results)
+    });
+});
+
+/* Instructions:
+ - run "npm start"
+ - call localhost:3000/web/v1/volumes
+*/
+router.get('/web/v1/volumes', function(req, res, next) {
+    db.all(GET_ALL_VOLUMES, [], (err, volumes) => {
+        if (err) {
+            return console.log(err.message);
+        }
+
+        let results = []
+        for (const volume of volumes) {
+            let result = {}
+            let category = {}
+            category.id = volume.id
+            category.name = volume.name
+            result.category = category
+            result.averageMonthlyVolume = volume.volume
+            results.push(result)
         }
 
         res.send(results)
