@@ -10,13 +10,13 @@ const db = new sqlite3.Database("db.sqlite", err => {
     console.log("Connexion réussie à la base de données 'db.sqlite'");
 });
 
-const GET_ALL_CATEGORIES = "select * from categories";
+const GET_ALL_CATEGORIES = "select * from categories c inner join categories_closure cc on c.id = cc.descendant_id";
 
 /* Instructions:
  - run "npm start"
  - call localhost:3000/web/v1/categories
 */
-router.get('/web/v1/categories', function (req, res, next) {
+router.get('/web/v1/categories', function(req, res, next) {
     db.all(GET_ALL_CATEGORIES, [], (err, categories) => {
         if (err) {
             return console.log(err.message);
@@ -24,17 +24,26 @@ router.get('/web/v1/categories', function (req, res, next) {
 
         let results = []
         for (const category of categories) {
-            let result = {}
-            result.id = category.id
-            result.name = category.name
-            let children = []
-            for (const child of categories) {
-                if (child.parent_id === category.id) {
-                    children.push({id: child.id, name: child.name})
+            if (results.length === 0 || (results.length > 0 && results.map(r => r.id).indexOf(category.id) < 0)) {
+                let result = {}
+                result.id = category.id
+                result.name = category.name
+                let ancestors = []
+                for (const ancestor of categories) {
+                    if (ancestor.ancestor_id !== category.id && category.ancestor_id === ancestor.id) {
+                        ancestors.push({id: ancestor.id, name: ancestor.name})
+                    }
                 }
+                result.ancestors = JSON.parse(JSON.stringify(ancestors))
+                let children = []
+                for (const child of categories) {
+                    if (child.descendant_id !== category.id && child.ancestor_id === category.id && child.parent_id === category.id) {
+                        children.push({id: child.id, name: child.name})
+                    }
+                }
+                result.children = JSON.parse(JSON.stringify(children))
+                results.push(result)
             }
-            result.children = JSON.parse(JSON.stringify(children))
-            results.push(result)
         }
 
         res.send(results)
